@@ -86,7 +86,7 @@ export default class LazyLoad extends Component {
 
       this.setState({ visible: true }, () => {
         if (onContentVisible) {
-          onContentVisible();
+          onContentVisible(node);
         }
       });
       this.detachListeners();
